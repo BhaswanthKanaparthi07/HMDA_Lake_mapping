@@ -1,5 +1,7 @@
 # HMDA Lake Mapping & Verification Chatbot
 "A Chatbot that maps HMDA lake boundaries and verifies whether user-entered coordinates fall within official lake layouts using geospatial polygon detection."
+![image](https://github.com/user-attachments/assets/bff44c7f-f3f9-4786-a7b5-ddecf162a486)
+![image](https://github.com/user-attachments/assets/6f3c3ece-af2f-403f-b6ca-daf0fa27e83c)
 
 
 This project helps users verify whether a given latitude and longitude point falls inside the boundary of any officially digitized HMDA lake layout (Full Tank Level/FTL lakes) in Hyderabad. It uses polygon mapping techniques powered by Shapely and Folium, and provides an easy-to-use chatbot-like interface built with Streamlit.
@@ -29,6 +31,9 @@ Show the lake name (if matched).
 Plot both your point and the lake boundary on an interactive map.
 If your point doesn’t fall within any known lake polygon, the app will clearly let you know that it lies outside the digitized layouts.
 
+![image](https://github.com/user-attachments/assets/9e18c6ab-06c7-4bd9-9f7c-cc7491501d60)
+![image](https://github.com/user-attachments/assets/39e19b24-d962-47b5-b761-0b743d5df986)
+![image](https://github.com/user-attachments/assets/dc61a34b-2ff6-43cd-a413-d88d0de0a654)
 
 
 # Want to Explore the Backend Logic? 
