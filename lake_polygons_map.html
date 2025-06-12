@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_90f835e0f4359a8211cfd059bd7dd9ff {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_90f835e0f4359a8211cfd059bd7dd9ff" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_90f835e0f4359a8211cfd059bd7dd9ff = L.map(
+                "map_90f835e0f4359a8211cfd059bd7dd9ff",
+                {
+                    center: [17.171309573070605, 78.27765413793105],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d7fe6d69072360bbd0b1063cf915a3b7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d7fe6d69072360bbd0b1063cf915a3b7.addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            var polygon_39419c53ec528a6b8a93a9cf11d4ae1c = L.polygon(
+                [[17.44549, 78.321], [17.44556, 78.32092], [17.44563, 78.32097], [17.44572, 78.32105], [17.44584, 78.32109], [17.44609, 78.32113], [17.44632, 78.32104], [17.44604, 78.32098], [17.44605, 78.32097], [17.44622, 78.32092], [17.44646, 78.32089], [17.44652, 78.32075], [17.44685, 78.32064], [17.4471, 78.32065], [17.44758, 78.32032], [17.4474, 78.32012], [17.4475, 78.3198], [17.44784, 78.31963], [17.44783, 78.3193], [17.44761, 78.31933], [17.44728, 78.31922], [17.44719, 78.31926], [17.44656, 78.3192], [17.44627, 78.31964], [17.44609, 78.31944], [17.44592, 78.31948], [17.44572, 78.31953], [17.44529, 78.3197], [17.44538, 78.31935], [17.44514, 78.31922], [17.44502, 78.31901], [17.4451, 78.31969], [17.4451, 78.31981], [17.44549, 78.321]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_39419c53ec528a6b8a93a9cf11d4ae1c.bindTooltip(
+                `<div>
+                     0_Chillukala_Kunta_lake
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_bbe881c104861d85435abc7b94d8d632 = L.polygon(
+                [[17.15962, 78.28179], [17.15943, 78.28165], [17.15917, 78.28158], [17.15889, 78.28148], [17.15868, 78.28126], [17.15882, 78.28102], [17.15911, 78.28054], [17.15918, 78.28029], [17.15942, 78.28001], [17.15914, 78.27951], [17.15936, 78.27953], [17.15981, 78.27922], [17.15999, 78.27908], [17.16013, 78.27893], [17.1607, 78.279], [17.15962, 78.28179]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_bbe881c104861d85435abc7b94d8d632.bindTooltip(
+                `<div>
+                     Bodhi_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_3868242e8591af5b56f6f8007cf512c5 = L.polygon(
+                [[17.07243, 78.15439], [17.07247, 78.15444], [17.07252, 78.15457], [17.07253, 78.15482], [17.07255, 78.1551], [17.0725, 78.15528], [17.07252, 78.15523], [17.07257, 78.15567], [17.07242, 78.1558], [17.07241, 78.15586], [17.07221, 78.15586], [17.0721, 78.15574], [17.07243, 78.15439]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_3868242e8591af5b56f6f8007cf512c5.bindTooltip(
+                `<div>
+                     Chama_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_e6cb6656ca045afeac07c1eda6e7669f = L.polygon(
+                [[17.18383, 78.24281], [17.184, 78.2429], [17.1841, 78.24292], [17.18417, 78.24309], [17.18435, 78.24312], [17.18435, 78.24318], [17.18449, 78.24317], [17.1846, 78.24328], [17.18454, 78.2435], [17.18448, 78.24348], [17.18433, 78.24344], [17.1842, 78.24366], [17.18495, 78.24365], [17.18521, 78.24398], [17.18555, 78.24418], [17.18574, 78.24441], [17.18558, 78.24441], [17.18568, 78.24461], [17.18576, 78.24465], [17.1854, 78.24462], [17.18538, 78.24474], [17.18552, 78.24517], [17.18556, 78.24525], [17.18552, 78.24517], [17.1852, 78.24517], [17.1851, 78.24517], [17.18502, 78.24517], [17.18499, 78.24523], [17.18454, 78.24534], [17.18383, 78.24281]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_e6cb6656ca045afeac07c1eda6e7669f.bindTooltip(
+                `<div>
+                     Chinna_Komati_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_8e5b599add959b065e5acf70c652fea4 = L.polygon(
+                [[17.05279, 78.35651], [17.05275, 78.35652], [17.05268, 78.35659], [17.05261, 78.35675], [17.05252, 78.35691], [17.05239, 78.35706], [17.05221, 78.35719], [17.05209, 78.35721], [17.05197, 78.35725], [17.05188, 78.35729], [17.0518, 78.35735], [17.05192, 78.35747], [17.05148, 78.35761], [17.05138, 78.35787], [17.05115, 78.35826], [17.05096, 78.35833], [17.05073, 78.35838], [17.05067, 78.35854], [17.05061, 78.35875], [17.05056, 78.35896], [17.05049, 78.35918], [17.05056, 78.35936], [17.05056, 78.35953], [17.0508, 78.35973], [17.051, 78.36], [17.05109, 78.36028], [17.05119, 78.3606], [17.05121, 78.36063], [17.05129, 78.36073], [17.05169, 78.36056], [17.05185, 78.36042], [17.05194, 78.36011], [17.05208, 78.36002], [17.05219, 78.35991], [17.05232, 78.35991], [17.0527, 78.35998], [17.05289, 78.35989], [17.05279, 78.35651]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_8e5b599add959b065e5acf70c652fea4.bindTooltip(
+                `<div>
+                     Erra_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_ab028bf5cdc47a045b78c103a8c62657 = L.polygon(
+                [[17.08889, 78.17002], [17.08892, 78.16996], [17.08902, 78.16994], [17.08916, 78.16988], [17.0893, 78.16986], [17.08936, 78.16987], [17.08963, 78.16989], [17.08963, 78.16982], [17.08979, 78.16978], [17.08977, 78.16991], [17.08994, 78.17006], [17.0898, 78.1702], [17.08986, 78.17125], [17.08962, 78.17093], [17.08889, 78.17002]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_ab028bf5cdc47a045b78c103a8c62657.bindTooltip(
+                `<div>
+                     Gaddabhavi_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_ca4ecf5e14ef92db67cf46b0306a7d5d = L.polygon(
+                [[17.09914, 78.19715], [17.09941, 78.1971], [17.09949, 78.19681], [17.09953, 78.19679], [17.09956, 78.19651], [17.09979, 78.19624], [17.10006, 78.19588], [17.10034, 78.19554], [17.10052, 78.19491], [17.10077, 78.19447], [17.10041, 78.19388], [17.10006, 78.19375], [17.09955, 78.19365], [17.0985, 78.19395], [17.09776, 78.19418], [17.09433, 78.19453], [17.0968, 78.19466], [17.09645, 78.19447], [17.09622, 78.1946], [17.09611, 78.19513], [17.09914, 78.19715]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_ca4ecf5e14ef92db67cf46b0306a7d5d.bindTooltip(
+                `<div>
+                     Hanuman_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_65bab20b7f1ad8a4145b3563ad73a847 = L.polygon(
+                [[17.07629, 78.19753], [17.07623, 78.1974], [17.07597, 78.1976], [17.07558, 78.19772], [17.07512, 78.1978], [17.07468, 78.19796], [17.07382, 78.19805], [17.07368, 78.19827], [17.07331, 78.1986], [17.07341, 78.19892], [17.07346, 78.19912], [17.07356, 78.19922], [17.07425, 78.19929], [17.07472, 78.19967], [17.07477, 78.19983], [17.07527, 78.1998], [17.07568, 78.19996], [17.07587, 78.20015], [17.07611, 78.20021], [17.07644, 78.20024], [17.07647, 78.20016], [17.07629, 78.19753]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_65bab20b7f1ad8a4145b3563ad73a847.bindTooltip(
+                `<div>
+                     Jannamma_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_9abaf07774dc3dc0d567e9facd96f6d5 = L.polygon(
+                [[17.04106, 78.26581], [17.04081, 78.26583], [17.04071, 78.26609], [17.04059, 78.26645], [17.04075, 78.267], [17.04045, 78.26731], [17.04043, 78.26774], [17.04037, 78.26863], [17.04031, 78.26889], [17.0404, 78.26907], [17.04052, 78.26921], [17.04106, 78.26581]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_9abaf07774dc3dc0d567e9facd96f6d5.bindTooltip(
+                `<div>
+                     Kakarathumu_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_ec21cc912960bf9d01af4956e35d9bcb = L.polygon(
+                [[17.7882, 78.79488], [17.78817, 78.79495], [17.78823, 78.79497], [17.78834, 78.79497], [17.7885, 78.7951], [17.7885, 78.7951], [17.78851, 78.79544], [17.78868, 78.79552], [17.78873, 78.79543], [17.78875, 78.79538], [17.7889, 78.7951], [17.789, 78.79511], [17.78911, 78.7951], [17.78926, 78.79509], [17.7894, 78.7951], [17.78946, 78.79529], [17.78954, 78.79537], [17.78974, 78.79541], [17.78979, 78.79539], [17.78998, 78.79537], [17.79007, 78.7955], [17.7901, 78.79552], [17.79023, 78.79556], [17.79027, 78.7957], [17.79032, 78.7957], [17.79036, 78.7958], [17.79049, 78.79577], [17.79051, 78.7959], [17.79041, 78.79591], [17.79033, 78.79589], [17.79004, 78.79589], [17.78992, 78.79588], [17.79, 78.79588], [17.7901, 78.79606], [17.79011, 78.79619], [17.78997, 78.79627], [17.78991, 78.79631], [17.78991, 78.79632], [17.78974, 78.79662], [17.78964, 78.79656], [17.78958, 78.79647], [17.78954, 78.79705], [17.78954, 78.79706], [17.78954, 78.79735], [17.78893, 78.79736], [17.78896, 78.79772], [17.78913, 78.79769], [17.78855, 78.79777], [17.7882, 78.79488]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_ec21cc912960bf9d01af4956e35d9bcb.bindTooltip(
+                `<div>
+                     Kangula_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_deabf59239543b5dcea0565853d67fa8 = L.polygon(
+                [[17.08022, 78.12269], [17.08032, 78.12254], [17.08056, 78.12278], [17.08057, 78.12299], [17.08054, 78.12317], [17.08034, 78.12337], [17.08003, 78.12334], [17.0798, 78.12347], [17.07966, 78.12361], [17.07945, 78.12365], [17.07936, 78.12381], [17.07908, 78.12373], [17.07875, 78.12379], [17.07849, 78.1237], [17.07825, 78.12341], [17.07818, 78.12323], [17.07807, 78.12288], [17.07759, 78.12291], [17.07761, 78.12276], [17.08022, 78.12269]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_deabf59239543b5dcea0565853d67fa8.bindTooltip(
+                `<div>
+                     Komati_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_9b2757ba7ad08080847daa8c45fd84a9 = L.polygon(
+                [[17.04655, 78.29141], [17.04662, 78.29183], [17.04673, 78.29208], [17.04681, 78.29231], [17.04697, 78.29273], [17.04709, 78.29337], [17.04717, 78.29362], [17.04715, 78.2937], [17.04729, 78.29385], [17.04742, 78.29406], [17.04669, 78.29427], [17.04666, 78.29428], [17.04641, 78.29417], [17.0464, 78.2941], [17.04639, 78.29396], [17.04639, 78.29395], [17.04616, 78.29377], [17.04596, 78.29373], [17.04574, 78.29371], [17.04561, 78.29369], [17.0456, 78.2935], [17.04544, 78.29352], [17.04443, 78.29361], [17.04356, 78.29289], [17.04367, 78.29258], [17.0441, 78.29259], [17.04655, 78.29141]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_9b2757ba7ad08080847daa8c45fd84a9.bindTooltip(
+                `<div>
+                     Kotha_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_fb6ed71635c6b110972bd2a798d6bf1b = L.polygon(
+                [[17.21061, 78.27161], [17.21048, 78.27158], [17.21027, 78.27151], [17.21043, 78.27141], [17.21082, 78.27145], [17.21089, 78.27118], [17.21122, 78.27042], [17.21136, 78.27022], [17.21129, 78.27124], [17.2114, 78.27122], [17.21227, 78.27133], [17.21271, 78.2715], [17.21293, 78.27147], [17.21314, 78.2714], [17.213, 78.27196], [17.213, 78.27223], [17.21061, 78.27161]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_fb6ed71635c6b110972bd2a798d6bf1b.bindTooltip(
+                `<div>
+                     Kummari_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_a0ff766c9b9f1261003d5ebdf67bf7ac = L.polygon(
+                [[17.079, 78.171], [17.079, 78.171], [17.079, 78.17], [17.079, 78.17], [17.078, 78.17], [17.078, 78.17], [17.078, 78.17], [17.078, 78.169], [17.078, 78.169], [17.078, 78.169], [17.079, 78.168], [17.079, 78.168], [17.079, 78.168], [17.079, 78.171]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_a0ff766c9b9f1261003d5ebdf67bf7ac.bindTooltip(
+                `<div>
+                     Kunta_Shikham
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_3e98935a0df82ddcc01fc3f0ff546b7c = L.polygon(
+                [[17.07678, 78.16272], [17.07674, 78.16268], [17.07679, 78.1625], [17.07689, 78.16246], [17.07685, 78.16218], [17.0769, 78.16202], [17.07695, 78.16184], [17.07688, 78.16149], [17.07702, 78.16138], [17.07678, 78.16272]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_3e98935a0df82ddcc01fc3f0ff546b7c.bindTooltip(
+                `<div>
+                     Mala_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_d7c8a1ab48edc06f8a48ea00c0ff9f49 = L.polygon(
+                [[17.08451, 78.16085], [17.0847, 78.16097], [17.08485, 78.16112], [17.08495, 78.16147], [17.08504, 78.16182], [17.08514, 78.16208], [17.08517, 78.16218], [17.08517, 78.1624], [17.08451, 78.16085]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_d7c8a1ab48edc06f8a48ea00c0ff9f49.bindTooltip(
+                `<div>
+                     Masoni_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_65782abf62881dc06ada17a4bf47f23b = L.polygon(
+                [[17.10024, 78.20688], [17.10035, 78.20673], [17.10048, 78.20658], [17.10058, 78.2068], [17.10069, 78.207], [17.10088, 78.20714], [17.10067, 78.2074], [17.10088, 78.20761], [17.10101, 78.20776], [17.10088, 78.20782], [17.10101, 78.20814], [17.10094, 78.2084], [17.10079, 78.20841], [17.10073, 78.20834], [17.10024, 78.20688]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_65782abf62881dc06ada17a4bf47f23b.bindTooltip(
+                `<div>
+                     Moddu_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_00ca2c4bcfab6f51d7716b35aba64ad8 = L.polygon(
+                [[17.15676, 78.22562], [17.15676, 78.22542], [17.15704, 78.22523], [17.15718, 78.22504], [17.15746, 78.22492], [17.15783, 78.22478], [17.15806, 78.22473], [17.15835, 78.2246], [17.15858, 78.2247], [17.15863, 78.22536], [17.15857, 78.22566], [17.15847, 78.22591], [17.15841, 78.22599], [17.15834, 78.22611], [17.15835, 78.22709], [17.15676, 78.22562]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_00ca2c4bcfab6f51d7716b35aba64ad8.bindTooltip(
+                `<div>
+                     Muthyal_Reddy_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_db905d3c9328054274e99d88bdc7de76 = L.polygon(
+                [[17.11164, 78.1816], [17.1118, 78.18162], [17.1119, 78.1816], [17.11198, 78.18156], [17.11207, 78.18161], [17.11207, 78.18172], [17.1121, 78.18196], [17.11217, 78.18207], [17.11218, 78.18221], [17.11225, 78.1825], [17.11233, 78.18265], [17.11222, 78.18276], [17.11206, 78.18276], [17.11193, 78.1827], [17.11183, 78.18266], [17.11164, 78.1816]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_db905d3c9328054274e99d88bdc7de76.bindTooltip(
+                `<div>
+                     Pedda_Arla_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_ce8897e827e227f8b83d9478407ccb1c = L.polygon(
+                [[17.0928, 78.22658], [17.09258, 78.22677], [17.09241, 78.22696], [17.09232, 78.2271], [17.09223, 78.22724], [17.09197, 78.22722], [17.09166, 78.22727], [17.09155, 78.22748], [17.09148, 78.22784], [17.0914, 78.22814], [17.09141, 78.22847], [17.0914, 78.22882], [17.09137, 78.22912], [17.09146, 78.22926], [17.09159, 78.2294], [17.09177, 78.2295], [17.09194, 78.22961], [17.09209, 78.2296], [17.09223, 78.22945], [17.09242, 78.22974], [17.09256, 78.22982], [17.09273, 78.22987], [17.09285, 78.22989], [17.09309, 78.2299], [17.09328, 78.22996], [17.09357, 78.22998], [17.09389, 78.23008], [17.0941, 78.23017], [17.09428, 78.23028], [17.09466, 78.23029], [17.09504, 78.23022], [17.09533, 78.23018], [17.09567, 78.23008], [17.0928, 78.22658]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_ce8897e827e227f8b83d9478407ccb1c.bindTooltip(
+                `<div>
+                     Peddin_Cheruvu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_9efe1a9a10ff094aea4de623dfa37f38 = L.polygon(
+                [[17.03629, 78.27762], [17.03621, 78.27701], [17.03613, 78.27697], [17.03599, 78.27712], [17.0358, 78.27774], [17.0361, 78.27895], [17.03633, 78.28013], [17.03638, 78.28019], [17.03656, 78.2809], [17.0367, 78.28112], [17.03689, 78.28121], [17.03705, 78.28126], [17.03721, 78.28128], [17.03725, 78.2813], [17.03729, 78.28132], [17.03741, 78.28136], [17.03753, 78.2814], [17.03764, 78.28149], [17.03791, 78.2816], [17.03817, 78.28166], [17.03843, 78.2817], [17.03847, 78.28155], [17.03848, 78.28155], [17.03844, 78.28147], [17.0384, 78.28135], [17.0383, 78.28111], [17.03629, 78.27762]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_9efe1a9a10ff094aea4de623dfa37f38.bindTooltip(
+                `<div>
+                     Pinnamma_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_3cec8c37811b8a25a5e0a9fae88e7be9 = L.polygon(
+                [[17.07013, 78.154], [17.07024, 78.15416], [17.07041, 78.15462], [17.07055, 78.15479], [17.07055, 78.15497], [17.07043, 78.1552], [17.07032, 78.15529], [17.07023, 78.15546], [17.07019, 78.15549], [17.07013, 78.154]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_3cec8c37811b8a25a5e0a9fae88e7be9.bindTooltip(
+                `<div>
+                     Poolkam_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_69d4614bac003a5f2fdb4ff0ce0880ba = L.polygon(
+                [[17.06386, 78.13691], [17.0638, 78.1371], [17.06406, 78.13744], [17.06417, 78.13806], [17.06454, 78.13909], [17.06498, 78.13926], [17.06544, 78.13944], [17.06597, 78.13896], [17.06642, 78.13878], [17.067, 78.13857], [17.06733, 78.13839], [17.06733, 78.1384], [17.06788, 78.13818], [17.06793, 78.13682], [17.06769, 78.13578], [17.06386, 78.13691]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_69d4614bac003a5f2fdb4ff0ce0880ba.bindTooltip(
+                `<div>
+                     Pulicherla_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_c473f9a0af0ce826346e2e412f582d8a = L.polygon(
+                [[17.093, 78.17967], [17.093, 78.17976], [17.09281, 78.17969], [17.09253, 78.17969], [17.09227, 78.17984], [17.09194, 78.17959], [17.09156, 78.17969], [17.09123, 78.17933], [17.09092, 78.17913], [17.09158, 78.17852], [17.09192, 78.17834], [17.09219, 78.17839], [17.093, 78.17967]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_c473f9a0af0ce826346e2e412f582d8a.bindTooltip(
+                `<div>
+                     Siddoni_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_6904e4ac0218ff9e632aec6a074220a0 = L.polygon(
+                [[17.07088, 78.22814], [17.07061, 78.22802], [17.07043, 78.22793], [17.07029, 78.22752], [17.0702, 78.2278], [17.07003, 78.2273], [17.06987, 78.22711], [17.06969, 78.22695], [17.06951, 78.2268], [17.06939, 78.22668], [17.06927, 78.22622], [17.06935, 78.2258], [17.06935, 78.22539], [17.06952, 78.22508], [17.06969, 78.22476], [17.07014, 78.22459], [17.0703, 78.22464], [17.07043, 78.22467], [17.07054, 78.22455], [17.07109, 78.22467], [17.07141, 78.22478], [17.07163, 78.22492], [17.07088, 78.22814]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_6904e4ac0218ff9e632aec6a074220a0.bindTooltip(
+                `<div>
+                     Soora_Samudram
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_4341460c7d12530c8b148bc4813fc9c0 = L.polygon(
+                [[17.18777, 78.22361], [17.18753, 78.22348], [17.18741, 78.22337], [17.18728, 78.22333], [17.1872, 78.22325], [17.18703, 78.22321], [17.1869, 78.22328], [17.1869, 78.22364], [17.18695, 78.22404], [17.18718, 78.22416], [17.18729, 78.2242], [17.18777, 78.22361]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_4341460c7d12530c8b148bc4813fc9c0.bindTooltip(
+                `<div>
+                     Sunarkunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_f791440d71564afd4e80dd3ae28e4422 = L.polygon(
+                [[17.15165, 78.18104], [17.15164, 78.18103], [17.15167, 78.1808], [17.15172, 78.18072], [17.15182, 78.18071], [17.15187, 78.1807], [17.1517, 78.18068], [17.15201, 78.18067], [17.15228, 78.18044], [17.15242, 78.18044], [17.15263, 78.18041], [17.15254, 78.18041], [17.15265, 78.18041], [17.15275, 78.18039], [17.15285, 78.1804], [17.15295, 78.18034], [17.15297, 78.18032], [17.15308, 78.1804], [17.15332, 78.18035], [17.15337, 78.18087], [17.1534, 78.18114], [17.15337, 78.18136], [17.15165, 78.18104]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_f791440d71564afd4e80dd3ae28e4422.bindTooltip(
+                `<div>
+                     Thette_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_7787e2c0f6ff626496bdb1f26816edcd = L.polygon(
+                [[17.09954, 78.22612], [17.09951, 78.22614], [17.09948, 78.22615], [17.09926, 78.22621], [17.09916, 78.22638], [17.09898, 78.2265], [17.09876, 78.22657], [17.09858, 78.22665], [17.09844, 78.22668], [17.09803, 78.22658], [17.09771, 78.22659], [17.09738, 78.2266], [17.09711, 78.22682], [17.09702, 78.22694], [17.09694, 78.22704], [17.09711, 78.22719], [17.0973, 78.22734], [17.0974, 78.22747], [17.09741, 78.22759], [17.09755, 78.22772], [17.09773, 78.22796], [17.09786, 78.2281], [17.09795, 78.22798], [17.09815, 78.22782], [17.09836, 78.22788], [17.09881, 78.22797], [17.0991, 78.2281], [17.09933, 78.22821], [17.09946, 78.22827], [17.09953, 78.22831], [17.09967, 78.22853], [17.0998, 78.22847], [17.09985, 78.22851], [17.09954, 78.22612]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_7787e2c0f6ff626496bdb1f26816edcd.bindTooltip(
+                `<div>
+                     Thunga_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_a4fac47dc0f993c2a6152d4e606056e6 = L.polygon(
+                [[17.05833, 78.2913], [17.05817, 78.29173], [17.05819, 78.29174], [17.05845, 78.29178], [17.05878, 78.29179], [17.0588, 78.29191], [17.05911, 78.29199], [17.05911, 78.29208], [17.05912, 78.29227], [17.05939, 78.29232], [17.05968, 78.29244], [17.05981, 78.29249], [17.05983, 78.29244], [17.06011, 78.29255], [17.06019, 78.29255], [17.0602, 78.29236], [17.06016, 78.29202], [17.06012, 78.2917], [17.06012, 78.29154], [17.06012, 78.29127], [17.06006, 78.29093], [17.06004, 78.2908], [17.05995, 78.29064], [17.05971, 78.29046], [17.0596, 78.29036], [17.05962, 78.29024], [17.05947, 78.29012], [17.05924, 78.29008], [17.05915, 78.29007], [17.05915, 78.28997], [17.05833, 78.2913]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_a4fac47dc0f993c2a6152d4e606056e6.bindTooltip(
+                `<div>
+                     Yatham_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_061db33e0c03ccb28308b369f1e37132 = L.polygon(
+                [[17.16614, 78.19868], [17.16609, 78.19861], [17.16644, 78.19765], [17.16649, 78.19741], [17.15018, 78.19695], [17.15041, 78.19639], [17.1507, 78.19597], [17.15079, 78.19542], [17.15094, 78.19498], [17.1511, 78.19474], [17.15108, 78.19442], [17.15162, 78.19373], [17.15143, 78.19316], [17.15053, 78.19245], [17.15126, 78.19221], [17.15164, 78.19266], [17.15229, 78.19384], [17.15216, 78.19408], [17.15197, 78.19496], [17.15165, 78.19584], [17.15138, 78.19669], [17.16614, 78.19868]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_90f835e0f4359a8211cfd059bd7dd9ff);
+        
+    
+            polygon_061db33e0c03ccb28308b369f1e37132.bindTooltip(
+                `<div>
+                     Yennem_Kunta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
